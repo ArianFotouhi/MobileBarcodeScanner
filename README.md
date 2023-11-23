@@ -2,7 +2,7 @@
 
 
 ## Getting a License Key for Dynamsoft Barcode Reader
-[![](https://img.shields.io/badge/Get-30--day%20FREE%20Trial-blue)](https://www.dynamsoft.com/customer/license/trialLicense/?product=dbr)
+[Link to dynamsoft for 30 days free trial](https://www.dynamsoft.com/customer/license/trialLicense/?product=dbr)
 
 
 ## Supported Barcode Symbologies
