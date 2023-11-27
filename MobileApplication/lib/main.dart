@@ -4,10 +4,9 @@ import 'dart:async';
 import 'dart:io';
 
 import 'package:camera/camera.dart';
-import 'package:flutter_barcode_sdk_example/mobile.dart';
+import '/mobile.dart';
 
-import 'package:flutter/material.dart';
-import 'package:camera/camera.dart';
+
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -15,11 +14,39 @@ void main() async {
   runApp(
     MaterialApp(
       title: 'Dynamsoft Barcode Reader',
-      home: Scaffold(
-        body: Mobile(camera: camera),
-      ),
+      home: MyHomePage(camera: camera),
     ),
   );
+}
+
+class MyHomePage extends StatelessWidget {
+  final CameraDescription camera; // CameraDescription object passed in
+
+  const MyHomePage({Key? key, required this.camera}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Mobile Function Button'),
+      ),
+      body: Center(
+        child: ElevatedButton(
+          onPressed: () {
+            // Perform your mobile function here
+            // For example, if you want to open the camera:
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => Mobile(camera: camera),
+              ),
+            );
+          },
+          child: Text('Open Camera'),
+        ),
+      ),
+    );
+  }
 }
 
 Future<CameraDescription> getFirstCamera() async {
