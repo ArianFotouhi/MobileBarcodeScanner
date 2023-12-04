@@ -2,7 +2,12 @@
 
 Google's ML Kit for Flutter is a set of [Flutter plugins](https://flutter.io/platform-plugins/) that enable [Flutter](https://flutter.dev) apps to use [Google's standalone ML Kit](https://developers.google.com/ml-kit).
 
+<<<<<<< HEAD
 ## Features
+=======
+## Getting a License Key for Dynamsoft Barcode Reader
+[Link to dynamsoft for 30 days free trial](https://www.dynamsoft.com/customer/license/trialLicense/?product=dbr)
+>>>>>>> 1963821e626b0ea0efed1f5c397bb47f2727bda0
 
 ### Vision APIs
 
